@@ -1,0 +1,75 @@
+.login-login{
+    padding-right:140px ;
+    padding-bottom: 20px;
+}
+.input {
+    border: 2px solid transparent;
+    width: 25em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin-bottom: 30px;;
+}
+  
+.input:hover,
+.input:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+
+.btn {
+    width: 24em;
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+    color: #0A58CA;
+}
+
+.btn:active {
+    transform: translate(0em, 0.2em);
+}
+
+.card{
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+}
+
+#bg{
+    position: absolute;
+    right: 0;
+    width: 60%;   
+    height: 100%;
+}
+
+.card{
+    padding-top: 70px;
+}
+.card3{
+    padding-left:40px ;
+    display: flex;
+    flex-direction: column;   
+}
+
+.create-account {
+    margin-top: 10px;
+    margin-right: 500px;;
+}

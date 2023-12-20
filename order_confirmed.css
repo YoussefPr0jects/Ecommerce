@@ -1,0 +1,67 @@
+.card5 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    width: 40%; 
+    text-align: left;
+    border-radius: 0.5rem;
+    
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background-color: #fff;                                                                                                                     
+  }
+  
+  
+  .header {
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
+  
+  .image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e2feee;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 9999px;
+    animation: animate .6s linear alternate-reverse infinite;
+    transition: .6s ease;
+  }
+  
+  .image svg {
+    color: #0afa2a;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .content {
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+  
+  .title {
+    color: #066e29;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+  
+  .message {
+    margin-top: 0.5rem;
+    color: #595b5f;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.09);
+    }
+  }

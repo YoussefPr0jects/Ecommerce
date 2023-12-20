@@ -1,0 +1,110 @@
+.main-layout {
+  /* Styles for the main layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* white background */
+}
+
+.about {
+  /* Styles for the about section */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  /* Styles for the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  /* Styles for the row */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col-xl-5,
+.col-lg-5,
+.col-md-5,
+.co-sm-l2 {
+  /* Styles for the columns */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_img {
+  /* Styles for the image */
+
+  left: 0;
+}
+
+.about_img img {
+  /* Styles for the image */
+margin-top: 50px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: 15px 15px 30px rgb(236, 235, 235),
+             -15px -15px 30px rgb(232, 231, 231);
+}
+
+.about_box {
+  /* Styles for the about box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000; /* black text */
+}
+.footer {
+    /* Styles for the footer */
+    background-color: #143F69; /* black background */
+    color: #ffffff; /* white text */
+    padding: 20px;
+    width:100%;
+  }
+  
+  .container {
+    /* Styles for the container */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    /* Styles for the social icons */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    /* Styles for the social icons links */
+    color: #ffffff; /* white icons */
+    margin: 0 10px;
+  }
+  
+  .footer-nav {
+    /* Styles for the footer navigation */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-nav a {
+    /* Styles for the footer navigation links */
+    color: #ffffff; /* white links */
+    margin: 0 10px;
+  }
+  
