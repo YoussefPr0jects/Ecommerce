@@ -55,11 +55,11 @@ export function Login() {
         <div className="card3">
             <label  style={{ textAlign: 'left' }} htmlFor="email"><strong>Email</strong></label>
             <input className="input" onChange={handleInput}  name="email" type="email" placeholder="Enter your email" />
-            {errors.email && <span className="text-danger"> {errors.email}</span>}
+            {errors.email && <span className="text-danger" style={{ textAlign: 'left', marginTop: '-15px' }}> {errors.email}</span>}
         
             <label style={{ textAlign: 'left' }} htmlFor="password"><strong>Password</strong></label>
             <input className="input" onChange={handleInput} name="password" type="password" placeholder="Enter your password" />
-            {errors.password && <span className="text-danger"> {errors.password}</span>}
+            {errors.password && <span className="text-danger" style={{ textAlign: 'left', marginTop: '-15px' }}>{errors.password}</span>}
         
             <button type="submit" className="btn" >Login</button>
             <Link to="../signup"><button className="btn create-account" >Create Account</button></Link>

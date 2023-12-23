@@ -25,7 +25,7 @@ export const Shop = () => {
         <p>(+961) 12345678</p>
         <p>nosatech@gmail.com</p>
         <div className="social-icons">
-          {/* Replace '#' with your actual social media links */}
+          {}
           <a href="#"><i className="fa fa-facebook"></i></a>
           <a href="#"><i className="fa fa-twitter"></i></a>
           <a href="#"><i className="fa fa-instagram"></i></a>

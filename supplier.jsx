@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SImage from './supply.jpeg';
+import './supplier.css';
+
 export const Supplier = () => {
   const [suppliers, setSuppliers] = useState([]);
   const [selectedSupplier, setSelectedSupplier] = useState(null);
@@ -65,17 +67,23 @@ export const Supplier = () => {
   };
 
   return (
-    <div  style={{ backgroundImage: `url(${SImage})`,height:'100%'}}>
+    <div className="card6">
       
       <h2 style={{
-        fontSize: '70px',
+        fontSize: '50px',
         fontWeight: '600',
-        color: '#143F69',
+        color: '#000000',
         backgroundClip: 'text',
-        WebkitBackgroundClip: 'text'
+        WebkitBackgroundClip: 'text',
+        marginBottom: '50px'
         
       }}>Suppliers</h2>
-      <label>Select Supplier:</label>
+
+
+<div className="choices">
+      <label className="labels">Select Supplier:</label>
+    
+  
       <select onChange={handleSupplierChange}>
         <option value="">Select a Supplier</option>
         {suppliers.map(supplier => (
@@ -84,10 +92,11 @@ export const Supplier = () => {
           </option>
         ))}
       </select>
-
+</div>
       {selectedSupplier && (
-        <div>
-          <label>Select Product:</label>
+
+        <div className="choices">
+          <label className="labels">Select Product:</label>
           <select onChange={handleProductChange}>
             <option value="">Select a Product</option>
             {products.map(product => (
@@ -98,15 +107,16 @@ export const Supplier = () => {
           </select>
 
           {selectedProduct && (
-            <div>
-              <label>Quantity Ordered:</label>
-              <input
+
+            <div className="choices">
+              <label className="labels" >Quantity Ordered:</label>
+              <input id="label"
                 type="number"
                 value={quantityOrdered}
                 onChange={(e) => setQuantityOrdered(e.target.value)}
               />
 
-              <button onClick={handleOrderSubmit}>Place Order</button>
+              <button id="placeorder" className="choices" onClick={handleOrderSubmit}>Place Order</button>
             </div>
           )}
         </div>

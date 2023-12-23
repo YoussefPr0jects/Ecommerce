@@ -3,21 +3,18 @@ import { useParams } from 'react-router-dom';
 import './order_confirmed.css';
 export const OrderConfirmed = () => {
   const { orderId } = useParams();
-  const [timer, setTimer] = useState(30); // Initial timer value in seconds
+  const [timer, setTimer] = useState(30); 
 
   useEffect(() => {
-    // Decrease the timer every second
     const countdown = setInterval(() => {
       setTimer((prevTimer) => prevTimer - 1);
     }, 1000);
 
-    // Redirect to the home page after 30 seconds
     const redirectTimer = setTimeout(() => {
       window.location.reload();
       window.location.replace('/home');
     }, 30000);
 
-    // Clear the intervals when the component unmounts
     return () => {
       clearInterval(countdown);
       clearTimeout(redirectTimer);

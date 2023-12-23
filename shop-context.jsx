@@ -16,7 +16,6 @@ export const ShopContextProvider = (props) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Fetch products when the component mounts
     axios.post('http://localhost:8081/shop-context') 
       .then(response => {
         const fetchedProducts = response.data;

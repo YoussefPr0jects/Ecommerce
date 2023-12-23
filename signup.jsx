@@ -36,16 +36,16 @@ export const Signup = () => {
             <div className = "card3">
                 <label style={{textAlign: 'left' }} htmlFor="name"><strong>Name</strong></label>
                 <input onChange={handleInput} className="input" type="name" name = "name" placeholder = "Enter your name"/>
-                {errors.name && <span className = "text-danger"> {errors.name}</span>}
+                {errors.name && <span className="text-danger" style={{ textAlign: 'left', marginTop: '-15px' }}>{errors.name}</span>}
                 
                 <label  style={{textAlign: 'left' }} htmlFor="email"><strong>Email</strong></label>
                 <input onChange={handleInput} className="input" name="email" type="email" placeholder = "Enter your email"/>
-                {errors.email && <span className = "text-danger"> {errors.email}</span>}
+                {errors.email && <span className="text-danger" style={{ textAlign: 'left', marginTop: '-15px' }}> {errors.email}</span>}
                
                 
                 <label style={{textAlign: 'left'}} htmlFor="password"><strong>Password</strong></label>
                 <input  onChange={handleInput} className="input" name ="password" type="password" placeholder = "Enter your password"/>
-                {errors.password && <span className = "text-danger"> {errors.password}</span>}
+                {errors.password && <span className="text-danger" style={{ textAlign: 'left', marginTop: '-15px' }}> {errors.password}</span>}
               
                <button className="btn">Create Account</button> 
                 
